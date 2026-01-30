@@ -1,7 +1,5 @@
 #ifndef lista_H                                                                             
- #define lista_H                                           
-#include <stdio.h>
-#include <stdlib.h>   
+ #define lista_H                                              
 typedef struct no {
 int valor; 
 struct no *prox;
