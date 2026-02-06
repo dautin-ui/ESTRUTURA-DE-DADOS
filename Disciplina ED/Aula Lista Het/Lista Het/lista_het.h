@@ -1,7 +1,13 @@
 #ifndef LISTA_HET
 #define LISTA_HET
 
-//nó da lista het
+//define os tipos das figuras
+#define RET 0
+#define TRI 1
+#define CIR 2
+
+
+//nó da lista heterogênea
 struct listaHet {
     int tipo;
     void* info;
