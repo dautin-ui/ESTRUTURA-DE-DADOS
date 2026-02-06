@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "lista_het.h"
 
+
 #define PI 3.14159
 
 // funções auxiliares de área
