@@ -1,38 +1,38 @@
 #ifndef LISTA_HET
 #define LISTA_HET
 
-//define os tipos das figuras
+// tipos das figuras
 #define RET 0
 #define TRI 1
 #define CIR 2
 
-
-//nó da lista heterogênea
-struct listaHet {
+// nó da lista heterogênea
+typedef struct listaHet {
     int tipo;
     void* info;
     struct listaHet* prox;
-}ListaHet;
+} ListaHet;
 
-//struct das figuras 
+// structs das figuras
 typedef struct {
     float b;
     float h;
-}retangulo;
+} Retangulo;
 
 typedef struct {
     float b;
     float h;
-}triangulo;
+} Triangulo;
 
 typedef struct {
     float r;
-}circulo;
+} Circulo;
 
-//functions signatures
-listaHet* cria_ret (float b, float h);
-listaHet* cria_tri (float b, float h);
-listaHet* cria_cir (float r);
-float calculaArea (listaHet* p);
+// funções
+ListaHet* lista_insere_ret(ListaHet* l, float b, float h);
+ListaHet* lista_insere_tri(ListaHet* l, float b, float h);
+ListaHet* lista_insere_cir(ListaHet* l, float r);
+
+float max_area(ListaHet* l);
 
 #endif
