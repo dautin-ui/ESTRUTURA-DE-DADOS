@@ -1,25 +1,29 @@
 #ifndef LISTA_HET
 #define LISTA_HET
-typedef struct listaHet {
-int tipo;
-void* info;
-struct listaHet* prox;
-}listaHet;
 
-typedef struct retangulo{
-float b;
-float h;
+//nó da lista het
+struct listaHet {
+    int tipo;
+    void* info;
+    struct listaHet* prox;
+}ListaHet;
+
+//struct das figuras 
+typedef struct {
+    float b;
+    float h;
 }retangulo;
 
-typedef struct circulo{
-float r;
-}circulo;
-
-typedef struct triangulo{
-float b;
-float h;
+typedef struct {
+    float b;
+    float h;
 }triangulo;
 
+typedef struct {
+    float r;
+}circulo;
+
+//functions signatures
 listaHet* cria_ret (float b, float h);
 listaHet* cria_tri (float b, float h);
 listaHet* cria_cir (float r);
